@@ -1,0 +1,41 @@
+name: Daily Swing Scan
+
+on:
+  schedule:
+    # Runs at 10:00 UTC (3:30 PM IST) every weekday
+    - cron: '0 10 * * 1-5'
+  workflow_dispatch: # Allow manual run
+
+permissions:
+  contents: write # Needed to commit trades.csv
+
+jobs:
+  scan-and-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Run Daily Scan
+        env:
+          ZERODHA_API_KEY: ${{ secrets.ZERODHA_API_KEY }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # You must update this daily in Repo Settings -> Secrets!
+        run: python daily_scan.py
+
+      - name: Commit Results
+        run: |
+          git config --global user.name "SwingBot Action"
+          git config --global user.email "bot@antigravity.com"
+          git add trades.csv portfolio.csv
+          git commit -m "📈 Daily Scan Update [skip ci]" || echo "No changes to commit"
+          git push
