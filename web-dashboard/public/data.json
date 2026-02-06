@@ -1,0 +1,344 @@
+{
+  "market_regime": {
+    "status": "BULLISH",
+    "index_name": "NIFTY 50",
+    "index_value": 25642.80078125,
+    "change_pct": -0.43912116314973637,
+    "last_updated": "Feb 06, 2026"
+  },
+  "portfolio_summary": {
+    "total_value": 370790.73,
+    "invested": 366521.0195490001,
+    "pnl": 4269.710450999904,
+    "pnl_pct": 1.1649292191355722,
+    "day_change": 0.0,
+    "day_change_pct": 0.0
+  },
+  "watchlist": [
+    {
+      "symbol": "RELIANCE",
+      "score": 3,
+      "t_score": 3,
+      "t_reasons": [
+        "[OK] Above 200 EMA",
+        "[OK] Golden Cross (50 > 200)",
+        "[OK] RSI Sweet Spot (40-60)",
+        "[OK] MACD Bullish",
+        "[OK] ADX > 20 (Trending)"
+      ],
+      "f_score": 4.8,
+      "f_reasons": [
+        "[LOW] ROE 0.0%",
+        "[OK] Low Debt (<0.5)",
+        "[OK] Promoters >50%"
+      ],
+      "change_3m": -1.06,
+      "sector": "Equity",
+      "ltr": 1441.9000244140625
+    },
+    {
+      "symbol": "TCS",
+      "score": 1,
+      "t_score": 1,
+      "t_reasons": [
+        "[FAIL] Below 200 EMA (Downtrend)",
+        "[WARN] RSI Weak"
+      ],
+      "f_score": 7.8,
+      "f_reasons": [
+        "[OK] ROE 42.6% > 20%",
+        "[OK] ROCE 22.5% > 18%",
+        "[OK] Low Debt (<0.5)",
+        "[OK] Promoters >50%",
+        "[OK] FCF Positive"
+      ],
+      "change_3m": 0.01,
+      "sector": "Equity",
+      "ltr": 2991.699951171875
+    },
+    {
+      "symbol": "INFY",
+      "score": 1,
+      "t_score": 1,
+      "t_reasons": [
+        "[FAIL] Below 200 EMA (Downtrend)",
+        "[OK] Golden Cross (50 > 200)",
+        "[WARN] RSI Weak",
+        "[OK] ADX > 20 (Trending)"
+      ],
+      "f_score": 6.3,
+      "f_reasons": [
+        "[OK] ROE 32.7% > 20%",
+        "[OK] Low Debt (<0.5)",
+        "[OK] FCF Positive"
+      ],
+      "change_3m": -0.63,
+      "sector": "Equity",
+      "ltr": 1521.4000244140625
+    },
+    {
+      "symbol": "HDFCBANK",
+      "score": 2,
+      "t_score": 2,
+      "t_reasons": [
+        "[FAIL] Below 200 EMA (Downtrend)",
+        "[OK] Golden Cross (50 > 200)",
+        "[OK] RSI Sweet Spot (40-60)",
+        "[OK] MACD Bullish",
+        "[OK] ADX > 20 (Trending)"
+      ],
+      "f_score": 4.5,
+      "f_reasons": [
+        "[WARN] High Debt (1.00)"
+      ],
+      "change_3m": -0.55,
+      "sector": "Equity",
+      "ltr": 949.7000122070312
+    },
+    {
+      "symbol": "ICICIBANK",
+      "score": 2,
+      "t_score": 2,
+      "t_reasons": [
+        "[OK] Above 200 EMA",
+        "[OK] Golden Cross (50 > 200)",
+        "[OK] RSI Sweet Spot (40-60)",
+        "[OK] MACD Bullish"
+      ],
+      "f_score": 3.1,
+      "f_reasons": [
+        "[WARN] High Debt (1.00)"
+      ],
+      "change_3m": -1.32,
+      "sector": "Equity",
+      "ltr": 1393.300048828125
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "ATGL",
+      "avg_price": 1042.8,
+      "qty": 5,
+      "ltp": 543.15,
+      "pnl": -2498.25,
+      "pnl_pct": -47.9
+    },
+    {
+      "symbol": "ATLANTAA",
+      "avg_price": 52.07,
+      "qty": 219,
+      "ltp": 44.98,
+      "pnl": -1551.98,
+      "pnl_pct": -13.6
+    },
+    {
+      "symbol": "ATULAUTO",
+      "avg_price": 530.95,
+      "qty": 10,
+      "ltp": 431.65,
+      "pnl": -993.0,
+      "pnl_pct": -18.7
+    },
+    {
+      "symbol": "AWL",
+      "avg_price": 333.42,
+      "qty": 23,
+      "ltp": 214.65,
+      "pnl": -2731.75,
+      "pnl_pct": -35.6
+    },
+    {
+      "symbol": "BEPL",
+      "avg_price": 140.58,
+      "qty": 53,
+      "ltp": 86.47,
+      "pnl": -2867.99,
+      "pnl_pct": -38.5
+    },
+    {
+      "symbol": "COALINDIA",
+      "avg_price": 441.76,
+      "qty": 28,
+      "ltp": 431.85,
+      "pnl": -277.5,
+      "pnl_pct": -2.2
+    },
+    {
+      "symbol": "DLF",
+      "avg_price": 798.71,
+      "qty": 72,
+      "ltp": 660.95,
+      "pnl": -9918.45,
+      "pnl_pct": -17.2
+    },
+    {
+      "symbol": "GMDCLTD",
+      "avg_price": 251.39,
+      "qty": 19,
+      "ltp": 613.85,
+      "pnl": 6886.74,
+      "pnl_pct": 144.2
+    },
+    {
+      "symbol": "GNFC",
+      "avg_price": 726.27,
+      "qty": 22,
+      "ltp": 465.8,
+      "pnl": -5730.3,
+      "pnl_pct": -35.9
+    },
+    {
+      "symbol": "HDFCBANK",
+      "avg_price": 793.69,
+      "qty": 24,
+      "ltp": 949.5,
+      "pnl": 3739.4,
+      "pnl_pct": 19.6
+    },
+    {
+      "symbol": "INDIACEM",
+      "avg_price": 273.56,
+      "qty": 45,
+      "ltp": 452.8,
+      "pnl": 8066.0,
+      "pnl_pct": 65.5
+    },
+    {
+      "symbol": "INFY",
+      "avg_price": 1490.78,
+      "qty": 8,
+      "ltp": 1519.8,
+      "pnl": 232.15,
+      "pnl_pct": 1.9
+    },
+    {
+      "symbol": "IRFC",
+      "avg_price": 194.5,
+      "qty": 49,
+      "ltp": 114.71,
+      "pnl": -3909.81,
+      "pnl_pct": -41.0
+    },
+    {
+      "symbol": "ITC",
+      "avg_price": 400.67,
+      "qty": 37,
+      "ltp": 310.25,
+      "pnl": -3345.45,
+      "pnl_pct": -22.6
+    },
+    {
+      "symbol": "LT",
+      "avg_price": 2195.58,
+      "qty": 14,
+      "ltp": 4063.3,
+      "pnl": 26148.05,
+      "pnl_pct": 85.1
+    },
+    {
+      "symbol": "NSDL",
+      "avg_price": 1179.15,
+      "qty": 8,
+      "ltp": 979.4,
+      "pnl": -1598.0,
+      "pnl_pct": -16.9
+    },
+    {
+      "symbol": "RPOWER",
+      "avg_price": 58.87,
+      "qty": 236,
+      "ltp": 28.13,
+      "pnl": -7255.48,
+      "pnl_pct": -52.2
+    },
+    {
+      "symbol": "RVNL",
+      "avg_price": 533.13,
+      "qty": 11,
+      "ltp": 316.7,
+      "pnl": -2380.7,
+      "pnl_pct": -40.6
+    },
+    {
+      "symbol": "SBICARD",
+      "avg_price": 700.5,
+      "qty": 10,
+      "ltp": 749.7,
+      "pnl": 492.0,
+      "pnl_pct": 7.0
+    },
+    {
+      "symbol": "SBIN",
+      "avg_price": 766.4,
+      "qty": 15,
+      "ltp": 1073.5,
+      "pnl": 4606.5,
+      "pnl_pct": 40.1
+    },
+    {
+      "symbol": "SUZLON",
+      "avg_price": 74.89,
+      "qty": 80,
+      "ltp": 47.86,
+      "pnl": -2162.4,
+      "pnl_pct": -36.1
+    },
+    {
+      "symbol": "TATACAP",
+      "avg_price": 326,
+      "qty": 46,
+      "ltp": 346.1,
+      "pnl": 924.6,
+      "pnl_pct": 6.2
+    },
+    {
+      "symbol": "TATAPOWER",
+      "avg_price": 415.85,
+      "qty": 12,
+      "ltp": 364.5,
+      "pnl": -616.2,
+      "pnl_pct": -12.3
+    },
+    {
+      "symbol": "TATASTEEL",
+      "avg_price": 161.9,
+      "qty": 28,
+      "ltp": 197.76,
+      "pnl": 1004.08,
+      "pnl_pct": 22.1
+    },
+    {
+      "symbol": "TCS",
+      "avg_price": 3177.97,
+      "qty": 6,
+      "ltp": 2992.05,
+      "pnl": -1115.55,
+      "pnl_pct": -5.9
+    },
+    {
+      "symbol": "TMCV",
+      "avg_price": 264.14,
+      "qty": 25,
+      "ltp": 455.85,
+      "pnl": 4792.68,
+      "pnl_pct": 72.6
+    },
+    {
+      "symbol": "TMPV",
+      "avg_price": 583.83,
+      "qty": 25,
+      "ltp": 374.15,
+      "pnl": -5241.93,
+      "pnl_pct": -35.9
+    },
+    {
+      "symbol": "WIPRO",
+      "avg_price": 217.78,
+      "qty": 101,
+      "ltp": 233.35,
+      "pnl": 1572.25,
+      "pnl_pct": 7.1
+    }
+  ],
+  "signals": []
+}

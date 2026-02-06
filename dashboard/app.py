@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as gr
@@ -6,7 +10,7 @@ import yfinance as yf
 from datetime import datetime, timedelta
 
 # Import custom modules
-from strategy.indicators import add_indicators, check_buy_setup, get_nifty_regime
+from strategy import add_indicators, check_entry_setup, check_nifty_regime
 from portfolio.live_holdings import get_holdings, get_live_prices
 from portfolio.exit_analyzer import analyze_portfolio
 from screener.strength_screener import get_strength_ranking
@@ -55,7 +59,7 @@ with st.sidebar:
 
     try:
         nifty_df = fetch_nifty()
-        is_bullish = get_nifty_regime(nifty_df)
+        is_bullish = check_nifty_regime(nifty_df)
         regime_color = "#2ecc71" if is_bullish else "#e74c3c"
         regime_text = "BULLISH" if is_bullish else "BEARISH"
         st.markdown(f"<div style='background-color:{regime_color}; padding:10px; border-radius:5px; text-align:center; font-weight:bold; color:white;'>NIFTY: {regime_text}</div>", unsafe_allow_html=True)
@@ -122,7 +126,11 @@ with col1:
         st.plotly_chart(fig, use_container_width=True)
         
         # Trade Signals
-        is_buy, reason = check_buy_setup(df, is_bullish)
+        if is_bullish:
+            is_buy, reason = check_entry_setup(df)
+        else:
+            is_buy, reason = False, "Wait (Nifty Bearish)"
+
         signal_class = "buy-signal" if is_buy else "wait-signal"
         st.markdown(f"**Strategy Analysis:** <span class='{signal_class}'>{reason}</span>", unsafe_allow_html=True)
     else:

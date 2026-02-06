@@ -14,3 +14,10 @@
 - Created `daily_scan.py` for headless execution.
 - Added `.github/workflows/scan.yml` for automated scheduling.
 - **Status: Deployment Ready.**
+
+## Refactor: Precision Alignment (2026-02-06)
+- Implemented "5-Module Core" (`scanner`, `strategy`, `paper_trader`, `zerodha_integration`).
+- Added Logic: Nifty Regime Check, 1.5x Volume, 0.2% Slippage.
+- Refactored Rating Engine to Modular Architecture.
+- Integrated Web Dashboard Data Pipeline (`data.json`).
+- **Status: Zero-Cost Cloud System Live.**

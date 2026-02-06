@@ -7,7 +7,7 @@ on:
   workflow_dispatch: # Allow manual run
 
 permissions:
-  contents: write # Needed to commit trades.csv
+  contents: write # Needed to commit CSVs
 
 jobs:
   scan-and-report:
@@ -26,13 +26,13 @@ jobs:
         run: |
           pip install -r requirements.txt
           
-      - name: Run Daily Scan
+      - name: Run Daily Scanner
         env:
           ZERODHA_API_KEY: ${{ secrets.ZERODHA_API_KEY }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # You must update this daily in Repo Settings -> Secrets!
-        run: python daily_scan.py
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Daily Update Required
+        run: python scanner.py
 
-      - name: Commit Results
+      - name: Commit Trades & Portfolio
         run: |
           git config --global user.name "SwingBot Action"
           git config --global user.email "bot@antigravity.com"
