@@ -1,7 +1,11 @@
 pandas
-
 yfinance
 streamlit
 plotly
 kiteconnect
 pytest
+beautifulsoup4
+requests
+fastapi
+uvicorn
+pydantic
